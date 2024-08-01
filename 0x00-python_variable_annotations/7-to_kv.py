@@ -4,7 +4,7 @@
 from typing import Tuple, Union
 
 
-def to_kv(k: str, v: Union[int, float]) -> Tuple[str, Union[int, float]]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """takes a string k and an int OR float v as and returns a tuple
 
     Args:
@@ -15,4 +15,4 @@ def to_kv(k: str, v: Union[int, float]) -> Tuple[str, Union[int, float]]:
         Tuple:  The first element of the tuple is the string k.
                 The second element is the square of the int/float v.
     """
-    return (k, v * 2)
+    return (k, float(v * 2))
